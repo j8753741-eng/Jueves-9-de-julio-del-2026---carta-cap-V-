@@ -413,42 +413,180 @@ Si alguna vez vuelves a guardar una tristeza solamente para proteger mi corazón
 
 </div>
 
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
+
+display:flex;
+justify-content:center;
+margin:45px 0 15px;
+
+}
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+transition:.35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.wax-seal::before{
+
+content:"";
+
+position:absolute;
+
+width:210px;
+height:40px;
+
+background:rgba(255,255,255,.22);
+
+transform:rotate(-35deg);
+
+top:18px;
+left:-60px;
+
+}
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,.45);
+
+}
+
+.ribbon{
+
+width:6px;
+
+height:95px;
+
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
+
+margin:0 auto;
+
+border-radius:5px;
+
+}
+
+.end-message{
+
+margin-top:28px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.3rem;
+
+color:#7b4323;
+
+}
+
+.page-number{
+
+margin-top:40px;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
+
+}
+
+</style>
+
 <div class="seal-container">
 
-    <a
-    class="wax-seal"
-    target="_blank"
-    href="https://j8753741-eng.github.io/Jueves-9-de-julio-del-2026---poema/">
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Jueves-9-de-julio-del-2026---poema/">
 
-        📜<br>
-        ABRIR EL<br>
-        POEMA DE<br>
-        ESTA NOCHE
+📜<br>
 
-    </a>
+ABRIR EL<br>
 
-    <div class="page-turn">
+POEMA DE<br>
 
-        <p class="page-turn-text">
+ESTA NOCHE
 
-            <strong>Cuando una página termina, el corazón ya ha comenzado a escribir la siguiente...</strong><br>
+</a>
+
+</div>
+
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>Cuando una página termina, el corazón ya ha comenzado a escribir la siguiente...</strong><br>
 
             Solo espera el momento de volver a abrir este libro.
-        </p>
+</p>
 
-        <a href="https://j8753741-eng.github.io/Viernes-10-de-julio-del-2026---carta-VI-/" class="page-corner">
+<a href="https://j8753741-eng.github.io/Viernes-10-de-julio-del-2026---carta-VI-/" class="page-corner">
 
-            <span>✦ Pasar la página ✦</span>
+<span>✦ Pasar la página ✦</span>
 
-        </a>
-
-    </div>
+</a>
 
 </div>
 
 <div class="ribbon"></div>
 
 <div class="end-message">
+
 
 <strong>
 
@@ -465,10 +603,8 @@ Porque los libros más valiosos no son los que tienen más páginas, sino aquell
 </div>
 
 </div>
-</div>
 
-</body>
-</html>
+</div>
 
 </body>
 
