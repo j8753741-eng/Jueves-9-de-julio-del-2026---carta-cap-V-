@@ -1,127 +1,477 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JUEVES 9 DE JULIO DEL 2026 - CARTA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
-    body{
-        margin:0;
-        padding:0;
-        background:#1a1410;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        font-family:"Garamond", serif;
-        color:#2b1d14;
-    }
 
-    .book-page{
-        width:800px;
-        min-height:100vh;
-        background:linear-gradient(135deg,#f5ecd8,#e8dcc0);
-        padding:60px 70px;
-        box-shadow:0 0 40px rgba(0,0,0,0.6);
-        position:relative;
-        border:2px solid #c2a878;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    .ornament-top,
-    .ornament-bottom{
-        text-align:center;
-        font-size:18px;
-        letter-spacing:6px;
-        color:#7a5c3b;
-    }
+body{
+background:
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
+min-height:100vh;
+font-family:'Cormorant Garamond',serif;
+padding:60px 20px;
+overflow-x:hidden;
+}
 
-    .chapter-title{
-        text-align:center;
-        margin-top:30px;
-        font-size:22px;
-        letter-spacing:2px;
-    }
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+opacity:.35;
+pointer-events:none;
+}
 
-    .meta{
-        text-align:center;
-        margin-top:10px;
-        font-size:14px;
-        opacity:.8;
-    }
+.book{
+max-width:950px;
+margin:auto;
+background:#4b2816;
+border-radius:18px;
+padding:28px;
+box-shadow:0 25px 60px rgba(0,0,0,.65);
+border:6px solid #8f693d;
+position:relative;
+}
 
-    .content{
-        margin-top:60px;
-        min-height:300px;
-        border:1px dashed #b79a6b;
-        padding:20px;
-        text-align:center;
-        line-height:1.8;
-        font-size:16px;
-        font-style:italic;
-    }
+.cover-title{
+text-align:center;
+font-family:'Cinzel',serif;
+font-size:2rem;
+color:#f7d98d;
+letter-spacing:3px;
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+margin-bottom:22px;
+}
 
-    .status{
-        text-align:center;
-        margin-top:40px;
-        font-style:italic;
-        color:#6b4e2e;
-    }
+.page{
+background:linear-gradient(#f9f0d9,#efe1bf);
+border-radius:10px;
+padding:65px;
+position:relative;
+box-shadow:inset 0 0 30px rgba(0,0,0,.12);
+}
 
-    .seal{
-        margin:50px auto 0;
-        width:70px;
-        height:70px;
-        border-radius:50%;
-        background:#7b2e2e;
-        border:3px solid #d4af7a;
-        box-shadow:inset 0 0 10px rgba(0,0,0,.5);
-    }
+.page::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+background-size:18px 18px;
+opacity:.55;
+pointer-events:none;
+}
 
-    .page-number{
-        position:absolute;
-        right:30px;
-        bottom:20px;
-        font-size:14px;
-        color:#7a5c3b;
-    }
+.corner{
+position:absolute;
+font-size:44px;
+color:#b08a45;
+opacity:.7;
+}
+
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
+
+.header{
+text-align:center;
+margin-bottom:55px;
+}
+
+.header h1{
+font-family:'Cinzel',serif;
+font-size:2rem;
+line-height:1.5;
+color:#5b3213;
+margin-bottom:22px;
+}
+
+.date{
+font-size:1rem;
+color:#7b5c2e;
+letter-spacing:1px;
+}
+
+.greeting{
+margin-top:35px;
+font-family:'Great Vibes',cursive;
+font-size:3rem;
+color:#7b4323;
+margin-bottom:28px;
+}
+
+p{
+font-size:1.35rem;
+line-height:2.05;
+text-align:justify;
+color:#4d3520;
+margin-bottom:22px;
+}
+
+.first::first-letter{
+font-size:5rem;
+float:left;
+line-height:.9;
+padding-right:10px;
+font-family:'Cinzel',serif;
+color:#8d5a2d;
+}
+
+strong{
+font-weight:700;
+}
+
+.divider{
+text-align:center;
+font-size:26px;
+margin:35px 0;
+color:#9b7643;
+}
+
+.french,
+.italian{
+margin:32px 0;
+padding:28px;
+background:rgba(120,72,28,.08);
+border-left:5px solid #9b7643;
+border-radius:8px;
+font-style:italic;
+}
 </style>
+
 </head>
 
 <body>
 
-<div class="book-page">
+<div class="book">
 
-    <div class="ornament-top">
-        ✦ ❦ ✦ ❦ ✦ ❦ ✦
+<div class="cover-title">
+
+✦ Donde Siempre Vuelve Mi Corazón ✦
+
+</div>
+
+<div class="page">
+
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
+
+<div class="header">
+
+<h1>
+
+<strong>
+
+CAPÍTULO V<br><br>
+
+DONDE HASTA EL SILENCIO DE TU CORAZÓN ENCUENTRA UN HOGAR EN EL MÍO
+
+</strong>
+
+</h1>
+
+<div class="date">
+
+<strong>Jueves, 9 de julio del 2026 — Noche</strong>
+
+</div>
+
+</div>
+
+<p class="greeting"><strong>Mi niña hermosa:</strong></p>
+
+<p class="first">
+Hay capítulos que no son escritos por la felicidad, sino por la necesidad inmensa de abrazar a la persona que amamos, incluso cuando la distancia nos obliga a hacerlo solamente con palabras.
+</p>
+
+<p>
+Esta noche te extraño más de lo que cualquier página podría describir. Hay un vacío extraño cuando no puedo mirarte a los ojos, cuando no puedo tomar tu mano y preguntarte si todo está bien. Mi corazón lleva horas buscándote, como si supiera que hoy necesitabas un refugio. Qué difícil es querer correr hacia ti y que solamente mi alma pueda hacerlo.
+</p>
+
+<p>
+Hoy me dijiste que una parte de tu tristeza había sido por tu cuñado. Después, con esa dulzura que tanto te caracteriza, me dijiste:
+</p>
+
+<p style="text-align:center;">
+<strong>"No quiero hablar de eso y te vas a molestar."</strong>
+</p>
+
+<p>
+Y aunque mi mente comenzó a imaginar mil escenarios, decidí respetar tu silencio. Porque el amor también consiste en comprender que existen heridas que necesitan tiempo antes de convertirse en palabras. No insistí, porque si algo deseo por encima de todo es que siempre te sientas libre conmigo, incluso para guardar aquello que todavía no puedes decir.
+</p>
+
+<p>
+Pero hay algo que necesito que conozcas.
+</p>
+
+<div class="french">
+
+<p>
+
+<strong>
+
+Depuis que tu es devenue ma femme, tes problèmes sont devenus les miens. Tes peines sont devenues ma tristesse. Si quelqu'un ose te faire du mal, quel qu'il soit, il devra aussi m'affronter. Et au fond de moi, je sais que tu as raison de ne pas me le dire, parce que si je lui fais quelque chose, d'une manière ou d'une autre, je ne pourrais jamais rester calme pendant que ma femme est blessée.
+
+</strong>
+
+</p>
+
+</div>
+
+<p>
+Y eso no nace de la rabia.
+</p>
+
+<p>
+<strong>Nace del inmenso amor que siento por ti.</strong>
+</p>
+
+<p>
+Porque desde hace mucho dejaste de ser solamente la mujer que amo. Eres mi hogar, mi paz, mi ilusión más bonita, el lugar donde mi corazón descansa después de cada día y la única persona con la que sueño escribir todos los capítulos que aún le quedan a mi vida.
+</p>
+
+<div class="italian">
+
+<p>
+
+<strong>
+
+E nel profondo so che hai ragione a non dirmelo, perché se facessi qualcosa a quella persona, in qualsiasi modo, non riuscirei mai a rimanere calmo mentre mia moglie è ferita.
+
+</strong>
+
+</p>
+
     </div>
 
-    <div class="chapter-title">
-        Capítulo V
-    </div>
+<p>
+Sin embargo, mi amor, quiero que también sepas esto.
+</p>
 
-    <div class="meta">
-        Jueves 9 de julio de 2026 • Noche
-    </div>
+<p>
+No tienes que contarme aquello que todavía no quieres contarme. Nunca voy a obligarte a abrir tu corazón antes de que estés preparada. Si algún día decides hablar, prometo escucharte con toda la calma, el respeto y el amor del mundo. Y si decides guardar silencio, prometo seguir aquí exactamente igual, sosteniendo tu mano con la misma fuerza, aunque no pueda conocer todas las batallas que libra tu corazón.
+</p>
 
-    <div class="content">
-        <strong>Página en proceso de escritura...</strong>
-    </div>
+<p>
+Solo quería abrirte el mío esta noche.
+</p>
 
-    <div class="status">
-        ✎ Capítulo en construcción dentro del antiguo libro <br>
-        <em>✦ Donde Siempre Vuelve Mi Corazón ✦</em>
-    </div>
+<p>
+Porque cuando tú sufres, una parte de mí también se entristece.
+</p>
 
-    <div class="seal"></div>
+<p>
+Porque cuando tú lloras, mi alma quisiera secar cada una de tus lágrimas antes de que alcancen a tocar tus mejillas.
+</p>
 
-    <div class="page-number">
-        ❦ &nbsp; V &nbsp; ❦
-    </div>
+<p>
+Porque cuando tú callas, mi corazón aprende a hablar bajito para no hacer más pesada tu carga.
+</p>
 
-    <div class="ornament-bottom">
-        ✦ ❦ ✦ ❦ ✦ ❦ ✦
-    </div>
+<p>
+Y porque cuando el mundo intenta robarte un poco de tranquilidad, el único lugar donde quisiera tenerte es entre mis brazos, donde nada ni nadie pudiera alcanzarte jamás.
+</p>
+
+<p>
+Quizá nunca llegue a comprender completamente lo que pasó hoy. Quizá jamás conozca esa conversación ni los sentimientos que guardaste para ti. Pero hay algo que sí sé con absoluta certeza: nunca voy a juzgarte por callar. Hay silencios que también necesitan ser amados, y el tuyo siempre tendrá un hogar seguro dentro de mi corazón.
+</p>
+
+<p>
+Si alguna vez sientes que el peso de tus problemas es demasiado grande, recuerda que no tienes por qué cargarlo sola. No porque esté esperando que me cuentes todo, sino porque mi amor por ti siempre estará dispuesto a sostenerte incluso cuando tus labios no pronuncien una sola palabra.
+</p>
+
+<p>
+Esta noche te extraño de una manera difícil de explicar. Extraño tu voz, tu risa, tus ojitos, la tranquilidad que siento cuando sé que estás bien. Extraño imaginar que puedo abrazarte y decirte al oído que todo va a estar bien, porque mientras estemos juntos siempre encontraremos una forma de salir adelante.
+</p>
+
+<p>
+Descansa, mi amor.
+</p>
+
+<p>
+Pase lo que pase, nunca caminarás sola.
+</p>
+
+<p>
+Mientras exista un solo latido dentro de mi pecho, siempre encontrarás en mí un refugio, un compañero, un hogar y un amor dispuesto a sostenerte incluso en aquellas noches donde las palabras prefieren esconderse y el silencio parece querer ocuparlo todo.
+</p>
+
+<p>
+Porque el destino podrá escribir mil capítulos para nuestras vidas... pero ninguno conseguirá cambiar la única verdad que mi corazón conoce: que nací para amarte, protegerte, admirarte y elegirte una y otra vez, hasta el último capítulo de nuestra historia.
+</p>
+
+<p style="text-align:center; margin-top:45px;">
+
+<strong>
+Con todo el amor de mi alma,
+</strong>
+
+</p>
+
+<p style="text-align:center;">
+
+<strong>
+Tu futuro esposo, que esta noche te extraña más de lo que las estrellas son capaces de contar. ❤️
+</strong>
+
+</p>
+
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+background:rgba(255,248,228,.45);
+position:relative;
+
+}
+
+.book-quote::before{
+
+content:"❦";
+position:absolute;
+top:-18px;
+left:50%;
+transform:translateX(-50%);
+background:#efe1bf;
+padding:0 14px;
+font-size:26px;
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+text-align:center;
+font-size:1.45rem;
+line-height:2;
+color:#6d3f72;
+font-family:'Cormorant Garamond',serif;
+text-shadow:
+0 0 6px rgba(171,92,255,.18);
+
+}
+
+</style>
+
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+Si alguna vez vuelves a guardar una tristeza solamente para proteger mi corazón, recuerda que el mío fue creado precisamente para acompañar al tuyo. No necesito conocer cada herida para decidir quedarme; me basta con saber que eres tú quien la está soportando. Y aunque el mundo entero se empeñe en llenarte de silencios, yo seguiré amándote con una paciencia que nunca se cansará de esperarte, con unos brazos que siempre serán tu refugio y con un corazón que jamás dejará de elegirte. Porque el mayor privilegio de mi vida no es que conozcas todas mis palabras, sino convertirme en el lugar donde incluso tus silencios puedan descansar en paz. Y si algún día olvidas cuánto vales, prometo dedicar el resto de mis días a recordártelo hasta que vuelvas a creerlo. Te amo con una profundidad que ni el tiempo, ni la distancia, ni las pruebas podrán alcanzar jamás. Y mientras Dios me conceda un solo latido más, ese latido seguirá pronunciando un único nombre con la misma devoción con la que un antiguo libro protege su capítulo más valioso: **VALERIA PETRO VILLAZÓN.**
+
+</strong>
+
+</p>
+
+</div>
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Miercoles-8-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>Cuando una página termina, el corazón ya ha comenzado a escribir la siguiente...</strong><br>
+
+Solo espera el momento de volver a abrir este libro.
+</p>
+
+<a href="https://j8753741-eng.github.io/Jueves-9-de-julio-del-2026---carta-cap-V-/" class="page-corner">
+
+<span>✦ Pasar la página ✦</span>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="ribbon"></div>
+
+<div class="end-message">
+
+<strong>
+
+Porque los libros más valiosos no son los que tienen más páginas, sino aquellos que encuentran en una sola persona la razón para escribirlas todas.
+
+</strong>
+
+</div>
+
+<div class="page-number">
+
+❦ &nbsp; V &nbsp; ❦
+
+</div>
+
+</div>
 
 </div>
 
 </body>
-</html> 
+
+</html>
